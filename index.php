@@ -10,10 +10,10 @@
 
 <div class="container">
 
-<h1>Envíos</h1>
+<h1>Envíos para todo el pais del mundo mundial</h1>
 
-<a href="crear.php">
-    <button>Nuevo Envío</button>
+<a class="nuevo-btn" href="crear.php">
+    <button>+ Nuevo Envío</button>
 </a>
 
 <table>
@@ -38,11 +38,11 @@ while($fila = mysqli_fetch_assoc($resultado)){
     <td><?php echo $fila['direccion']; ?></td>
     <td><?php echo $fila['descripcion']; ?></td>
 
-    <td>
-        <a href="editar.php?id=<?php echo $fila['id']; ?>">Editar</a>
-        |
-        <a href="eliminar.php?id=<?php echo $fila['id']; ?>">Eliminar</a>
-    </td>
+    <td class="acciones">
+    <a class="editar" href="editar.php?id=<?php echo $fila['id']; ?>">Editar</a>
+
+    <a class="eliminar" href="eliminar.php?id=<?php echo $fila['id']; ?>">Eliminar</a>
+</td>
 </tr>
 
 <?php } ?>
