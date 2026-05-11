@@ -17,9 +17,9 @@ jobs:
       - name: 📂 Sincronizando archivos via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp-yeimi.alwaysdata.net # Change if using another host
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ftp-alemont.alwaysdata.net # Change if using another host
+          username: alemont
+          password: clase1234
           server-dir: www/ # Replace with your correct path
           protocol: ftps
           timeout: 86400000
