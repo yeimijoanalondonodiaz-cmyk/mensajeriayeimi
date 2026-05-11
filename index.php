@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mensajería</title>
+    <title>Mensajería y envios</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
